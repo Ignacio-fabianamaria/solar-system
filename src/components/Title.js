@@ -2,7 +2,7 @@ import React from 'react';
 
 class Title extends React.Component {
   render() {
-    const headline = this.props;
+    const { headline } = this.props;
     return (
       <div>
         <h2>{ headline }</h2>
