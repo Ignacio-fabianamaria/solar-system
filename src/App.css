@@ -1,3 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+}
+
+body {
+background-image: url(./images/background.png);
+display: flex;
+justify-content: center;
+width: 95%;
+}
+
+header {
+  display: flex;
+  font-stretch: expanded;
+  flex-direction: column;
+  align-items: center;
+  color: gold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+header:hover{
+  transform: scale(1.4 );
+}
+
+.title-planetas:hover{
+  transform: scale(1.1 );
+}
+
+.title-planetas {
+  color: gold;
+  margin-left: 90px;
+  border: solid 2px dimgray;
+  box-shadow:  03px -03px gold;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 6px;
+  width: 90%;
+}
+
+.list-planetas {
+padding: 25px;
+}
+
+.sistema-sol img {
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 50px;
+margin-bottom: 5%;
+width: 160px;
+transform: rotate(360deg);
+}
+
+.planeta {
+  display: inline-block;
+  text-align: center;
+  
+}
+
+.planeta p {
+  color: gold;
+  font-size: 25px;
+}
+
+.lista-planetas {
+width: 20%;
+display: inline-block;
+
+}
+
+.title-missao {
+  color: gold;
+  margin-left: 90px;
+  border: solid 2px dimgray;
+  box-shadow:  03px -03px gold;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding:6px;
+  width: 90%;
+}
+
+.title-missao:hover{
+  transform: scale(1.1 );
+}
+
+.area-missoes {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 155px;
+  padding: 10px;
+}
+
+.lista-missoes {
+ border: solid 2px dimgray;
+ border-radius: 10px;
+ box-shadow:  03px -03px gold;
+ font-size: 16px;
+ font-weight: bold;
+ color:gold;
+ width: 300px;
+ text-align: center;
+ padding: 10px;
+ margin-bottom: 25px;
+}
+
+[ data-testid="planet-card" ] img{
+  transition: 0.8s;
+  animation: rotate 3.5s linear infinite;
+}
+
+
+[ data-testid="mission-card" ]:hover{
+  transform: scale(1.4 );
+}
+
+[ data-testid="mission-card" ]:hover{
+  transition: 0.8s;
 }
