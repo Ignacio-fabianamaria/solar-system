@@ -2,7 +2,7 @@
 
 <div align="center">
   
-![Carousel](carousel.gif)
+![Solar](solarsystem.gif)
   
 </div> 
 
